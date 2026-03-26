@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SYRI — Security That Thinks. Protecting What Matters.</title>
+<title>SYRI — SECURITY THAT THINKS. PROTECTING WHAT MATTERS.</title>
 <meta name="description" content="SYRI is a Miami-based AI robotics security company deploying autonomous robot dogs to protect schools, houses of worship, communities, and critical infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -101,9 +101,9 @@ a { color: inherit; text-decoration: none; }
   white-space: nowrap;
   border-right: 2px solid var(--blue-2);
   width: 0;
-  animation: typing 1s steps(24) forwards 1.4s, fadeUp 0.3s ease forwards 1.4s, blink 0.6s step-end infinite 1.4s;
+  animation: typing 1s steps(22) forwards 1.4s, fadeUp 0.3s ease forwards 1.4s, blink 0.6s step-end infinite 1.4s;
 }
-@keyframes typing { to { width: 24ch; } }
+@keyframes typing { to { width: 22ch; } }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -603,16 +603,21 @@ section { padding: 120px 60px; position: relative; }
   max-width: 520px; margin-left: auto; margin-right: auto;
 }
 .cta-section .btn-primary { position: relative; }
-.cta-input-group {
-  display: flex; gap: 12px; max-width: 440px; margin: 0 auto; position: relative;
+.cta-form {
+  max-width: 480px; margin: 0 auto; position: relative;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.cta-form .form-row {
+  display: flex; gap: 14px;
 }
 .cta-input {
   flex: 1; padding: 16px 20px; font-size: 15px; font-family: var(--font);
   background: #ffffff; border: 1px solid var(--gray-3); border-radius: 10px;
-  color: var(--text); outline: none; transition: all 0.3s;
+  color: var(--text); outline: none; transition: all 0.3s; width: 100%;
 }
 .cta-input::placeholder { color: var(--gray-2); }
 .cta-input:focus { border-color: var(--blue-2); box-shadow: 0 0 0 3px rgba(0,102,255,0.08); }
+textarea.cta-input { resize: vertical; min-height: 100px; }
 
 /* ── FOOTER ── */
 footer {
@@ -671,7 +676,7 @@ footer .footer-links a:hover { color: var(--text); }
   .verticals-grid { grid-template-columns: 1fr; }
   .timeline { grid-template-columns: 1fr; gap: 48px; }
   .timeline::before { display: none; }
-  .cta-input-group { flex-direction: column; }
+  .cta-form .form-row { flex-direction: column; }
   .hero-actions { flex-direction: column; align-items: flex-start; }
   .cursor-glow { display: none; }
   .about-stats { grid-template-columns: 1fr 1fr; }
@@ -683,17 +688,17 @@ footer .footer-links a:hover { color: var(--text); }
 <!-- INTRO -->
 <div id="intro-overlay">
   <div class="intro-logo">
-    <img src="logo.jpeg" alt="SYRI">
+    <img src="logo.svg" alt="SYRI">
     <div class="intro-shimmer"></div>
   </div>
-  <div class="intro-tagline">security that thinks.&nbsp;</div>
+  <div class="intro-tagline">SECURITY THAT THINKS.&nbsp;</div>
 </div>
 
 <div class="cursor-glow" id="cursorGlow"></div>
 
 <!-- NAV -->
 <nav id="mainNav">
-  <div class="nav-logo"><img src="logo.jpeg" alt="SYRI"></div>
+  <div class="nav-logo"><img src="logo.svg" alt="SYRI"></div>
   <ul class="nav-links">
     <li><a href="#protect">Who We Protect</a></li>
     <li><a href="#platform">Platform</a></li>
@@ -713,7 +718,7 @@ footer .footer-links a:hover { color: var(--text); }
       <span class="pulse"></span>
       Miami, FL
     </div>
-    <h1>Security that thinks.<br><span class="gradient-text">Protecting what matters.</span></h1>
+    <h1>SECURITY THAT THINKS.<br><span class="gradient-text">PROTECTING WHAT MATTERS.</span></h1>
     <p>SYRI deploys autonomous robot dogs powered by advanced AI to protect the spaces that matter most. Continuous patrol. Real-time threat detection. Instant alerts. Security that never sleeps, never blinks, and never misses.</p>
     <div class="hero-actions">
       <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
@@ -948,16 +953,21 @@ footer .footer-links a:hover { color: var(--text); }
 <section class="cta-section" id="contact">
   <h2 class="reveal">Ready to secure<br>what matters?</h2>
   <p class="reveal reveal-delay-1">We're deploying with pilot partners now. Tell us about your facility and we'll show you what SYRI can do.</p>
-  <div class="cta-input-group reveal reveal-delay-2">
-    <input type="email" class="cta-input" placeholder="you@organization.com">
-    <button class="btn-primary">Request Demo</button>
-  </div>
+  <form class="cta-form reveal reveal-delay-2" onsubmit="return false;">
+    <div class="form-row">
+      <input type="text" class="cta-input" placeholder="Your name" required>
+      <input type="text" class="cta-input" placeholder="Organization" required>
+    </div>
+    <input type="email" class="cta-input" placeholder="you@organization.com" required>
+    <textarea class="cta-input" placeholder="Tell us about your facility and security needs..."></textarea>
+    <button class="btn-primary" style="align-self: center;">Request Demo</button>
+  </form>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <div class="copy">&copy; 2026 SYRI &mdash; Miami, FL. All rights reserved.</div>
-  <div class="footer-mid">Security That Thinks. Protecting What Matters.</div>
+  <div class="footer-mid">SECURITY THAT THINKS. PROTECTING WHAT MATTERS.</div>
   <ul class="footer-links">
     <li><a href="#">Twitter</a></li>
     <li><a href="#">LinkedIn</a></li>
