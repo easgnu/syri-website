@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SYRI — SECURITY THAT THINKS. PROTECTING WHAT MATTERS.</title>
-<meta name="description" content="SYRI is a Miami-based AI robotics security company deploying autonomous robot dogs to protect schools, houses of worship, communities, and critical infrastructure.">
+<title>ORIMUS — SECURITY THAT THINKS. PROTECTING WHAT MATTERS.</title>
+<meta name="description" content="ORIMUS is a Miami-based AI robotics security company deploying autonomous robot dogs to protect schools, houses of worship, communities, and critical infrastructure.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -12,19 +12,22 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --blue-1: #0099ee;
-  --blue-2: #0066ff;
-  --blue-3: #0044cc;
-  --bg: #f7f7f7;
-  --bg-2: #f0f0f0;
-  --bg-3: #e8e8e8;
-  --text: #0d1117;
-  --text-2: #1a2332;
-  --gray-1: #5a6578;
+  --cyan: #60C7F4;
+  --royal: #1F61FC;
+  --navy: #05102B;
+  --blue-1: #60C7F4;
+  --blue-2: #1F61FC;
+  --blue-3: #05102B;
+  --bg: #fefefe;
+  --bg-2: #f4f5f7;
+  --bg-3: #eaecf0;
+  --text: #05102B;
+  --text-2: #0f1e42;
+  --gray-1: #4a5568;
   --gray-2: #8a94a6;
   --gray-3: #c4ccd8;
-  --border: rgba(0, 0, 0, 0.06);
-  --border-hover: rgba(0, 102, 255, 0.15);
+  --border: rgba(5, 16, 43, 0.06);
+  --border-hover: rgba(31, 97, 252, 0.18);
   --font: 'Space Grotesk', system-ui, sans-serif;
   --mono: 'JetBrains Mono', monospace;
 }
@@ -77,7 +80,7 @@ a { color: inherit; text-decoration: none; }
 .intro-logo .intro-shimmer {
   position: absolute;
   inset: 0;
-  background: linear-gradient(105deg, transparent 40%, rgba(0,102,255,0.12) 45%, rgba(0,153,238,0.2) 50%, rgba(0,102,255,0.12) 55%, transparent 60%);
+  background: linear-gradient(105deg, transparent 40%, rgba(31,97,252,0.12) 45%, rgba(96,199,244,0.2) 50%, rgba(31,97,252,0.12) 55%, transparent 60%);
   background-size: 300% 100%;
   animation: shimmerMove 1.2s ease forwards 1.2s;
   pointer-events: none;
@@ -131,14 +134,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(247,247,247,0.85);
+  background: rgba(254,254,254,0.85);
   backdrop-filter: blur(20px) saturate(1.4);
   -webkit-backdrop-filter: blur(20px) saturate(1.4);
   border-bottom: 1px solid var(--border);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 nav.scrolled {
-  background: rgba(247,247,247,0.96);
+  background: rgba(254,254,254,0.96);
   box-shadow: 0 1px 12px rgba(0,0,0,0.06);
 }
 .nav-logo { display: flex; align-items: center; gap: 12px; }
@@ -178,8 +181,8 @@ nav.scrolled {
 .hero-grid {
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(0,102,255,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,102,255,0.04) 1px, transparent 1px);
+    linear-gradient(rgba(31,97,252,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(31,97,252,0.04) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 70%);
   -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black 20%, transparent 70%);
@@ -189,12 +192,12 @@ nav.scrolled {
 
 .hero-orb {
   position: absolute; width: 600px; height: 600px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,102,255,0.06) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(31,97,252,0.06) 0%, transparent 70%);
   right: 5%; top: 15%; animation: orbFloat 8s ease-in-out infinite; filter: blur(60px);
 }
 .hero-orb-2 {
   position: absolute; width: 400px; height: 400px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(124,58,237,0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(96,199,244,0.06) 0%, transparent 70%);
   left: 10%; bottom: 10%; animation: orbFloat 10s ease-in-out infinite reverse; filter: blur(60px);
 }
 @keyframes orbFloat {
@@ -209,8 +212,8 @@ nav.scrolled {
   font-family: var(--mono); font-size: 12px; color: var(--blue-2);
   letter-spacing: 0.12em; text-transform: uppercase;
   margin-bottom: 28px; padding: 8px 16px;
-  background: rgba(0,102,255,0.05); border-radius: 20px;
-  border: 1px solid rgba(0,102,255,0.1);
+  background: rgba(31,97,252,0.05); border-radius: 20px;
+  border: 1px solid rgba(31,97,252,0.1);
   opacity: 0; animation: fadeUp 0.6s ease forwards 2.4s;
 }
 .hero-badge .pulse {
@@ -229,7 +232,7 @@ nav.scrolled {
   opacity: 0; animation: fadeUp 0.8s ease forwards 2.6s;
 }
 .hero h1 .gradient-text {
-  background: linear-gradient(135deg, var(--blue-1) 0%, var(--blue-2) 50%, #7c3aed 100%);
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--royal) 50%, var(--navy) 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
 }
 .hero p {
@@ -296,7 +299,7 @@ section { padding: 120px 60px; position: relative; }
 
 /* ── MISSION STATEMENT ── */
 .mission {
-  background: var(--text);
+  background: var(--navy);
   padding: 100px 60px;
   text-align: center;
 }
@@ -314,7 +317,7 @@ section { padding: 120px 60px; position: relative; }
   margin-bottom: 24px;
 }
 .mission blockquote strong {
-  color: var(--blue-1);
+  color: var(--cyan);
   font-weight: 600;
 }
 .mission .mission-sub {
@@ -349,7 +352,7 @@ section { padding: 120px 60px; position: relative; }
 .vertical-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,102,255,0.15), transparent);
+  background: linear-gradient(90deg, transparent, rgba(31,97,252,0.15), transparent);
   opacity: 0; transition: opacity 0.4s;
 }
 .vertical-card:hover::before { opacity: 1; }
@@ -357,8 +360,8 @@ section { padding: 120px 60px; position: relative; }
   width: 56px; height: 56px; margin: 0 auto 20px;
   display: flex; align-items: center; justify-content: center;
   border-radius: 14px;
-  background: rgba(0,102,255,0.06);
-  border: 1px solid rgba(0,102,255,0.08);
+  background: rgba(31,97,252,0.06);
+  border: 1px solid rgba(31,97,252,0.08);
 }
 .vertical-icon svg { width: 28px; height: 28px; color: var(--blue-2); }
 .vertical-card h3 {
@@ -388,14 +391,14 @@ section { padding: 120px 60px; position: relative; }
 .bento-card::before {
   content: ''; position: absolute; top: 0; left: 0; right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,102,255,0.15), transparent);
+  background: linear-gradient(90deg, transparent, rgba(31,97,252,0.15), transparent);
   opacity: 0; transition: opacity 0.4s;
 }
 .bento-card:hover::before { opacity: 1; }
 
 .bento-card.dog {
   grid-column: span 7; grid-row: span 2; min-height: 460px;
-  background: linear-gradient(160deg, var(--bg-2) 0%, rgba(0,102,255,0.04) 100%);
+  background: linear-gradient(160deg, var(--bg-2) 0%, rgba(31,97,252,0.04) 100%);
 }
 .bento-card.dog .card-visual {
   position: absolute; top: 40px; right: 40px; width: 260px; height: 200px;
@@ -404,25 +407,25 @@ section { padding: 120px 60px; position: relative; }
 .robot-dog .body {
   position: absolute; top: 40px; left: 30px; width: 180px; height: 80px;
   background: linear-gradient(135deg, #e8edf4 0%, #d4dce8 100%);
-  border-radius: 12px; border: 1px solid rgba(0,102,255,0.12);
-  box-shadow: 0 4px 20px rgba(0,102,255,0.06);
+  border-radius: 12px; border: 1px solid rgba(31,97,252,0.12);
+  box-shadow: 0 4px 20px rgba(31,97,252,0.06);
 }
 .robot-dog .head {
   position: absolute; top: 20px; left: 160px; width: 70px; height: 55px;
   background: linear-gradient(135deg, #e8edf4 0%, #d4dce8 100%);
-  border-radius: 8px 14px 10px 8px; border: 1px solid rgba(0,102,255,0.12);
+  border-radius: 8px 14px 10px 8px; border: 1px solid rgba(31,97,252,0.12);
 }
 .robot-dog .eye {
   position: absolute; top: 14px; right: 12px; width: 18px; height: 6px;
   background: var(--blue-2); border-radius: 3px;
-  box-shadow: 0 0 10px rgba(0,102,255,0.4);
+  box-shadow: 0 0 10px rgba(31,97,252,0.4);
   animation: dogBlink 3s ease-in-out infinite;
 }
 @keyframes dogBlink { 0%, 90%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
 .robot-dog .leg {
   position: absolute; bottom: 0; width: 8px; height: 60px;
   background: linear-gradient(to bottom, #dde3ed, #c8d0dc);
-  border-radius: 4px; border: 1px solid rgba(0,102,255,0.08);
+  border-radius: 4px; border: 1px solid rgba(31,97,252,0.08);
 }
 .robot-dog .leg.fl { left: 42px; animation: legWalk 1.2s ease-in-out infinite; }
 .robot-dog .leg.fr { left: 80px; animation: legWalk 1.2s ease-in-out infinite 0.6s; }
@@ -434,7 +437,7 @@ section { padding: 120px 60px; position: relative; }
 }
 .robot-dog .antenna {
   position: absolute; top: 4px; left: 190px; width: 2px; height: 18px;
-  background: rgba(0,102,255,0.3);
+  background: rgba(31,97,252,0.3);
 }
 .robot-dog .antenna::after {
   content: ''; position: absolute; top: -3px; left: -3px;
@@ -442,12 +445,12 @@ section { padding: 120px 60px; position: relative; }
   animation: pulse-blue 1.5s ease-in-out infinite;
 }
 @keyframes pulse-blue {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0,102,255,0.4); }
-  50% { opacity: 0.7; box-shadow: 0 0 0 8px rgba(0,102,255,0); }
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(31,97,252,0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 8px rgba(31,97,252,0); }
 }
 .robot-dog .scan-beam {
   position: absolute; top: 38px; left: 230px; width: 80px; height: 2px;
-  background: linear-gradient(to right, rgba(0,102,255,0.3), transparent);
+  background: linear-gradient(to right, rgba(31,97,252,0.3), transparent);
   animation: scanMove 2s ease-in-out infinite; transform-origin: left center;
 }
 .robot-dog .scan-beam:nth-child(8) { top: 32px; animation-delay: 0.3s; width: 60px; }
@@ -458,14 +461,14 @@ section { padding: 120px 60px; position: relative; }
 }
 
 .bento-card.dark {
-  grid-column: span 5; background: var(--text); border-color: var(--text);
+  grid-column: span 5; background: var(--navy); border-color: var(--navy);
 }
 .bento-card.dark:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.2); }
-.bento-card.dark .card-tag { color: var(--blue-1); }
+.bento-card.dark .card-tag { color: var(--cyan); }
 .bento-card.dark .card-title { color: rgba(255,255,255,0.9); }
 .bento-card.dark .card-desc { color: rgba(255,255,255,0.5); }
 .data-stream {
-  font-family: var(--mono); font-size: 11px; color: var(--blue-1);
+  font-family: var(--mono); font-size: 11px; color: var(--cyan);
   line-height: 2; opacity: 0.7; margin-bottom: 20px; overflow: hidden; height: 80px;
 }
 .data-stream .line { animation: dataFade 3s ease-in-out infinite; }
@@ -476,7 +479,7 @@ section { padding: 120px 60px; position: relative; }
 
 .bento-card.intel {
   grid-column: span 5;
-  background: linear-gradient(160deg, var(--bg-2) 0%, rgba(0,102,255,0.04) 100%);
+  background: linear-gradient(160deg, var(--bg-2) 0%, rgba(31,97,252,0.04) 100%);
 }
 
 .bento-card.metric {
@@ -487,7 +490,7 @@ section { padding: 120px 60px; position: relative; }
   font-size: 42px; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.02em;
 }
 .metric-value.blue { color: var(--blue-2); }
-.metric-value.purple { color: #7c3aed; }
+.metric-value.purple { color: var(--royal); }
 .metric-value.green { color: #059669; }
 .metric-label { font-size: 13px; color: var(--gray-2); letter-spacing: 0.04em; }
 
@@ -521,7 +524,7 @@ section { padding: 120px 60px; position: relative; }
   position: relative; z-index: 2; transition: all 0.4s;
 }
 .timeline-step:hover .step-num {
-  border-color: var(--blue-2); box-shadow: 0 0 0 4px rgba(0,102,255,0.08);
+  border-color: var(--blue-2); box-shadow: 0 0 0 4px rgba(31,97,252,0.08);
 }
 .step-title { font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--text); }
 .step-desc { font-size: 14px; color: var(--gray-1); line-height: 1.7; }
@@ -533,7 +536,7 @@ section { padding: 120px 60px; position: relative; }
   align-items: center; max-width: 1100px;
 }
 .telemetry-visual {
-  background: var(--text); border-radius: 16px; padding: 32px;
+  background: var(--navy); border-radius: 16px; padding: 32px;
   position: relative; overflow: hidden;
 }
 .telemetry-visual::after {
@@ -591,7 +594,7 @@ section { padding: 120px 60px; position: relative; }
 .cta-section::before {
   content: ''; position: absolute; top: 0; left: 50%;
   width: 600px; height: 600px; transform: translateX(-50%);
-  background: radial-gradient(circle, rgba(0,102,255,0.05) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(31,97,252,0.05) 0%, transparent 60%);
   pointer-events: none;
 }
 .cta-section h2 {
@@ -616,7 +619,7 @@ section { padding: 120px 60px; position: relative; }
   color: var(--text); outline: none; transition: all 0.3s; width: 100%;
 }
 .cta-input::placeholder { color: var(--gray-2); }
-.cta-input:focus { border-color: var(--blue-2); box-shadow: 0 0 0 3px rgba(0,102,255,0.08); }
+.cta-input:focus { border-color: var(--blue-2); box-shadow: 0 0 0 3px rgba(31,97,252,0.08); }
 textarea.cta-input { resize: vertical; min-height: 100px; }
 
 /* ── FOOTER ── */
@@ -647,7 +650,7 @@ footer .footer-links a:hover { color: var(--text); }
 
 .cursor-glow {
   position: fixed; width: 300px; height: 300px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(0,102,255,0.04) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(31,97,252,0.04) 0%, transparent 70%);
   pointer-events: none; z-index: 1;
   transform: translate(-50%, -50%); transition: left 0.3s ease, top 0.3s ease;
 }
@@ -688,7 +691,7 @@ footer .footer-links a:hover { color: var(--text); }
 <!-- INTRO -->
 <div id="intro-overlay">
   <div class="intro-logo">
-    <img src="logo.svg" alt="SYRI">
+    <img src="newlogo.jpeg" alt="ORIMUS">
     <div class="intro-shimmer"></div>
   </div>
   <div class="intro-tagline">SECURITY THAT THINKS.&nbsp;</div>
@@ -698,7 +701,7 @@ footer .footer-links a:hover { color: var(--text); }
 
 <!-- NAV -->
 <nav id="mainNav">
-  <div class="nav-logo"><img src="logo.svg" alt="SYRI"></div>
+  <div class="nav-logo"><img src="newlogo.jpeg" alt="ORIMUS"></div>
   <ul class="nav-links">
     <li><a href="#protect">Who We Protect</a></li>
     <li><a href="#platform">Platform</a></li>
@@ -719,7 +722,7 @@ footer .footer-links a:hover { color: var(--text); }
       Miami, FL
     </div>
     <h1>SECURITY THAT THINKS.<br><span class="gradient-text">PROTECTING WHAT MATTERS.</span></h1>
-    <p>SYRI deploys autonomous robot dogs powered by advanced AI to protect the spaces that matter most. Continuous patrol. Real-time threat detection. Instant alerts. Security that never sleeps, never blinks, and never misses.</p>
+    <p>ORIMUS deploys autonomous robot dogs powered by advanced AI to protect the spaces that matter most. Continuous patrol. Real-time threat detection. Instant alerts. Security that never sleeps, never blinks, and never misses.</p>
     <div class="hero-actions">
       <button class="btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
         Request a Demo
@@ -766,7 +769,7 @@ footer .footer-links a:hover { color: var(--text); }
 <section id="protect">
   <div class="section-label reveal">Who We Protect</div>
   <h2 class="section-title reveal reveal-delay-1">Guarding what can't be replaced.</h2>
-  <p class="section-desc reveal reveal-delay-2">SYRI units deploy where traditional security falls short &mdash; places that need constant, intelligent coverage without gaps.</p>
+  <p class="section-desc reveal reveal-delay-2">ORIMUS units deploy where traditional security falls short &mdash; places that need constant, intelligent coverage without gaps.</p>
 
   <div class="verticals-grid">
     <div class="vertical-card reveal">
@@ -774,7 +777,7 @@ footer .footer-links a:hover { color: var(--text); }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       </div>
       <h3>Schools</h3>
-      <p>Campuses need more than cameras. SYRI patrols grounds autonomously, detecting unauthorized access and alerting staff in real time.</p>
+      <p>Campuses need more than cameras. ORIMUS patrols grounds autonomously, detecting unauthorized access and alerting staff in real time.</p>
     </div>
     <div class="vertical-card reveal reveal-delay-1">
       <div class="vertical-icon">
@@ -795,7 +798,7 @@ footer .footer-links a:hover { color: var(--text); }
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/><circle cx="12" cy="15" r="2"/></svg>
       </div>
       <h3>Critical Infrastructure</h3>
-      <p>Power plants, data centers, utilities. SYRI provides autonomous perimeter security for high-value facilities that can't afford blind spots.</p>
+      <p>Power plants, data centers, utilities. ORIMUS provides autonomous perimeter security for high-value facilities that can't afford blind spots.</p>
     </div>
   </div>
 </section>
@@ -823,7 +826,7 @@ footer .footer-links a:hover { color: var(--text); }
         </div>
       </div>
       <div class="card-tag">Autonomous Unit</div>
-      <div class="card-title">SYRI Scout</div>
+      <div class="card-title">ORIMUS Scout</div>
       <div class="card-desc">A quadruped robot running real-time intelligence &mdash; LiDAR, thermal, and visual sensors fused into a single autonomous patrol unit. It doesn't wait for instructions. It anticipates threats.</div>
     </div>
 
@@ -870,7 +873,7 @@ footer .footer-links a:hover { color: var(--text); }
     <div class="timeline-step reveal">
       <div class="step-num">01</div>
       <div class="step-title">Map the Site</div>
-      <div class="step-desc">The SYRI unit walks your facility once, building a complete 3D map. No pre-programming, no manual waypoints. It learns the terrain on its own.</div>
+      <div class="step-desc">The ORIMUS unit walks your facility once, building a complete 3D map. No pre-programming, no manual waypoints. It learns the terrain on its own.</div>
     </div>
     <div class="timeline-step reveal reveal-delay-1">
       <div class="step-num">02</div>
@@ -880,7 +883,7 @@ footer .footer-links a:hover { color: var(--text); }
     <div class="timeline-step reveal reveal-delay-2">
       <div class="step-num">03</div>
       <div class="step-title">Detect &amp; Alert</div>
-      <div class="step-desc">When something deviates, SYRI alerts your security team instantly with location, visuals, and threat classification &mdash; all without human intervention.</div>
+      <div class="step-desc">When something deviates, ORIMUS alerts your security team instantly with location, visuals, and threat classification &mdash; all without human intervention.</div>
     </div>
   </div>
 </section>
@@ -891,7 +894,7 @@ footer .footer-links a:hover { color: var(--text); }
     <div>
       <div class="section-label reveal">Live Dashboard</div>
       <h2 class="section-title reveal reveal-delay-1">Every unit.<br>Every signal.<br>One feed.</h2>
-      <p class="section-desc reveal reveal-delay-2">Security teams monitor all deployed SYRI units from a single real-time dashboard. Battery, position, threat level, patrol status &mdash; everything at a glance.</p>
+      <p class="section-desc reveal reveal-delay-2">Security teams monitor all deployed ORIMUS units from a single real-time dashboard. Battery, position, threat level, patrol status &mdash; everything at a glance.</p>
     </div>
     <div class="telemetry-visual reveal">
       <div class="waveform" id="waveform"></div>
@@ -919,13 +922,13 @@ footer .footer-links a:hover { color: var(--text); }
 
 <!-- ABOUT -->
 <section class="about-section" id="about">
-  <div class="section-label reveal">About SYRI</div>
+  <div class="section-label reveal">About ORIMUS</div>
   <h2 class="section-title reveal reveal-delay-1">Built in Miami.<br>Built for the real world.</h2>
 
   <div class="about-grid">
     <div class="about-text reveal reveal-delay-2">
-      <p>SYRI sits at the intersection of robotics, AI, and real-world security deployment. Founded by a team with deep roots in technology, defense, and operations, we saw a gap between what security promises and what it delivers.</p>
-      <p>Traditional security is reactive. Guards get tired. Cameras have blind spots. Response times are measured in minutes when seconds matter. We built SYRI to close that gap &mdash; with autonomous intelligence that thinks, adapts, and acts at machine speed.</p>
+      <p>ORIMUS sits at the intersection of robotics, AI, and real-world security deployment. Founded by a team with deep roots in technology, defense, and operations, we saw a gap between what security promises and what it delivers.</p>
+      <p>Traditional security is reactive. Guards get tired. Cameras have blind spots. Response times are measured in minutes when seconds matter. We built ORIMUS to close that gap &mdash; with autonomous intelligence that thinks, adapts, and acts at machine speed.</p>
       <p>Our platform doesn't replace humans. It gives them superpowers &mdash; extending their reach, sharpening their awareness, and ensuring that nothing gets missed on their watch.</p>
     </div>
     <div class="about-stats reveal reveal-delay-3">
@@ -952,7 +955,7 @@ footer .footer-links a:hover { color: var(--text); }
 <!-- CTA -->
 <section class="cta-section" id="contact">
   <h2 class="reveal">Ready to secure<br>what matters?</h2>
-  <p class="reveal reveal-delay-1">We're deploying with pilot partners now. Tell us about your facility and we'll show you what SYRI can do.</p>
+  <p class="reveal reveal-delay-1">We're deploying with pilot partners now. Tell us about your facility and we'll show you what ORIMUS can do.</p>
   <form class="cta-form reveal reveal-delay-2" onsubmit="return false;">
     <div class="form-row">
       <input type="text" class="cta-input" placeholder="Your name" required>
@@ -966,7 +969,7 @@ footer .footer-links a:hover { color: var(--text); }
 
 <!-- FOOTER -->
 <footer>
-  <div class="copy">&copy; 2026 SYRI &mdash; Miami, FL. All rights reserved.</div>
+  <div class="copy">&copy; 2026 ORIMUS &mdash; Miami, FL. All rights reserved.</div>
   <div class="footer-mid">SECURITY THAT THINKS. PROTECTING WHAT MATTERS.</div>
   <ul class="footer-links">
     <li><a href="#">Twitter</a></li>
